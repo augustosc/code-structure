@@ -21,7 +21,6 @@ void measure_temperature_init()
     xTaskCreate(measure_temperature, "measure_temperature", 1024 * 4, NULL, 5, NULL);
 }
 
-// testando git
 static void measure_temperature(void *params)
 {
     while (true)
